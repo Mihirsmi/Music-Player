@@ -14,3 +14,5 @@ pygame.mixer.music.load(music_directory+list_of_all_files[index])
 pygame.mixer.music.play()
 while pygame.mixer.music.get_busy():
 	pygame.time.Clock().tick(10)
+	if int(raw_input()) == 0:
+		break
